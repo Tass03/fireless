@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>CURRICULUM VITAE</h1>
+        <style>
+            .container{
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <FORM action="#">
+            <fieldset>
+                <p>
+                    <label for="FullName">Enter Your Full Name:</label><br>
+                    <input type="text" name="fullname" id="fullname" size="70" required><br>
+                    <label for="physicaladdress">Enter Your physical address:</label><br>
+                    <input type="text" address="physicaladdress" id="physicaladdress" size="70" required><br>
+                    <label for="emailaddress">Enter Your email address:</label><br>
+                    <input type="text" email="emailaddess" id="emailaddress" size="70" required><br>
+                    <label  for="contactnumber">Enter Contact number:</label><br>
+                    <input type="number" size="70" required><br>
+                    <label for="website">Enter Website:</label><br>
+                    <input type="text" size="70" required><br>
+                </p>
+            </fieldset>
+        </FORM>
+        <p>
+            <label for="summaryaboutyou">Summary About You</label>
+        </p>
+        <textarea id="SummaryAboutYou" name="Summary About You" rows="5" cols="40"></textarea><br>
+        <p>
+            <label for="Skills">Skills</label>
+        </p>
+        <textarea id="Skills" name="Skills" rows="5" cols="40"></textarea><br>
+        <p>
+            <label for="workexperience">Work Experience</label>
+        </p>
+        <textarea id="WorkExperience" name="Work Experience" rows="5" cols="40"></textarea><br>
+        <div class="container">
+            <button id="addTextareaBtn">Add Textarea</button>
+        </div>
+        <form id="myForm">
+            <div id="textareasContainer">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            document.getElementById('addTextareaBtn').addEventListener('click',function()
+            {
+                var textareasContainer = 
+                document.getElementById('textareasContainer'); var textarea =
+                document.createElement('textarea');
+                textarea.setAttribute('rows','4'); //set number of rows as needed
+                textarea.setAttribute('cols','50'); //set number of columns as needed
+                textareasContainer.appendChild(textarea);
+            });
+        </script>
+
+        <p>
+            <label for="startDate">Start Date</label>
+            <input type="date" name="startDate" value=""><br>
+            <label for="endDate">End Date</label>
+            <input type="date" name="endDate" value=""><br>
+        </p>
+
+    </body>
+</html>

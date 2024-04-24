@@ -1,0 +1,88 @@
+<!Doctype html>
+<html>
+    <head>
+        <h1>Tasvir's Portfolio</h1>
+        <style>
+            img {
+                float: right;
+            }
+        </style>
+        <p>
+        <img src="picture.jpg" alt="click here" height="150px" width="150px" />
+        <br>
+        </p>
+        <h2>ABOUT</h2>
+         <p> I am a junior Front end developer who is starting out in the industry. 
+         <br>I specialize in HTML and CSS. 
+        <br> I am eager to learn and progress in the field.
+        </p>
+        <br>
+        <h3>SKILLS</h3>
+        <br>
+        <h4>PROJECTS</h4>
+        <style>
+            .column {
+                float: left;
+                width: 25%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .column {
+                background-color: #f2f2f2;
+                border: 1px solid #ddd;
+            }
+            @media screen and (max-width: 600px){
+                .column {
+                    width: 100%;
+                }   
+            }
+        </style>
+        <div class="row">
+            <div class="column">
+                <h2>Project 1</h2>
+                <P>
+                    <a href="Project1.html">CV Builder</a>
+                </P>
+            </div>
+            <div class="column">
+                <h2>Project 2</h2>
+                <p>
+                    <a href="Project2.html">WeatherApp</a>
+                </p>
+            </div>
+            <div class="column">
+                <h2>Column 3</h2>
+                <p>Content for column 3</p>
+            </div>
+            <div class="column">
+                <h2>Column 4 </h2>
+                <p>Content for column 4</p>
+            </div>
+        </div>
+    </head>
+    <body>
+        <form action="#">
+            <fieldset>
+                <legend>Get in touch</legend>
+                <label for="name">name</label>
+                <input type="text"> <br>
+                <label for="email">email</label>
+                <input type="text"> <br>
+                <label for="message">message</label>
+                <input type="text"> <br>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </body>
+    <footer>
+        <p>
+        <a href="https://www.facebook.com/Tasvir_Chetty">facebook</a> <br>
+        <a href="https://www.instagram.com/one_and_only_tass">instagram</a>
+        </p>
+    </footer>
+</html>
